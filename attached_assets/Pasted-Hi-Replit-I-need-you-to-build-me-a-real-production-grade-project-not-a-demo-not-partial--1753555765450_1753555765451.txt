@@ -1,0 +1,175 @@
+Hi Replit,
+
+I need you to build me a **real, production‑grade project** – not a demo, not partial code –  
+a fully working project that can run on Kali Linux as a complete ultimate Bug Bounty tool.  
+It must have a smart and fast CLI and act like a full professional Red Team in one tool.
+
+⚠️ Important:
+- Do NOT generate placeholders or sample code.
+- Every system/module you implement must be truly functional and executable.
+- If you think of extra modules or ideas beyond what I list here, **ask me first** before adding them so I can approve.
+
+---
+
+🔹 **General guidelines**
+- You choose the best programming languages for each part (for example: Go for the core scanning and CLI, Python for AI modules, Rust or C for high‑performance modules, etc.).
+- You decide the best folder and file structure, but it must include **all of the following systems**.
+- Each system should be in its own module or set of modules, with clean APIs between them.
+- Everything must be designed to run perfectly on Kali Linux.
+
+---
+
+🔹 **Required systems (each must be fully implemented):**
+
+💻 CLI and Usability:
+1. Main CLI with commands: `scan`, `report`, `triage`, `export`, `plugins`, `help`.
+2. Profile system (save/load different scan profiles).
+3. Interactive mode (menu‑driven).
+4. Tab completion.
+5. Colors, icons, and clear logging.
+6. Built‑in help/documentation.
+7. Command aliases.
+8. Multi‑scan parallel support.
+9. Remote execution mode.
+10. Automatic environment detection (Kali, Ubuntu, etc).
+
+🌐 Recon and Discovery:
+11. Subdomain enumeration (brute force, DNS records, APIs).
+12. Wildcard detection.
+13. Zone transfer (AXFR) checks.
+14. DNSSEC checks.
+15. Reverse DNS analyzer.
+16. Wayback Machine scraper.
+17. Crawl engine (respecting robots.txt).
+18. JavaScript and sitemap analysis.
+19. GraphQL introspection.
+20. OpenAPI/Swagger finder.
+21. Endpoint list builder.
+22. Bucket hunter (S3, GCP, Azure).
+23. Mobile app recon (APK/IPA analysis).
+24. Static file discovery (.env, .git, .bak, etc.).
+25. Asset fingerprinting.
+26. Subresource integrity checker.
+27. Technology fingerprinting (Wappalyzer or custom).
+28. WAF/CDN detector.
+29. SSL/TLS analyzer.
+30. Port scanner integrated.
+
+🧪 Vulnerability Scanning:
+31. XSS scanner (reflected, stored, DOM).
+32. RCE/command injection tester.
+33. SQL injection tester (union, blind, error‑based).
+34. IDOR tester.
+35. CORS misconfiguration scanner.
+36. CSRF analyzer.
+37. Open redirect finder.
+38. Path traversal/LFI/RFI detector.
+39. XXE scanner.
+40. Host header injection.
+41. JWT analyzer (alg=none, weak secrets).
+42. Rate limit tester.
+43. API permission escalation tester.
+44. Session fixation finder.
+45. HTTP request smuggling detector.
+46. CRLF injection tester.
+47. Cache poisoning analyzer.
+48. Prototype pollution tester.
+49. OAuth misconfiguration checker.
+50. SAML/SSO misuse detector.
+51. Broken authentication/password reset flaws.
+52. SSRF detector.
+53. Race condition detector.
+54. Business logic flaw finder.
+55. Header analyzer (CSP, HSTS, etc).
+
+🤖 AI‑Powered Modules:
+56. AI triage engine (severity classification).
+57. AI payload generator (generate custom payloads).
+58. AI false positive remover.
+59. AI auto‑report writer (professional English output).
+60. Machine learning prioritizer (learn from history).
+61. AI auto‑exploit designer (generate safe PoCs).
+62. AI endpoint ranker (prioritize endpoints).
+63. AI learning loop (improve with each scan).
+64. AI auto‑fix suggestions.
+
+📦 Results and Reporting:
+65. Report builder (HTML/PDF/Markdown).
+66. Export manager (JSON/CSV/YAML).
+67. PoC generator (curl/requests scripts).
+68. Screenshot engine (headless Chrome).
+69. Timeline generator (scan history).
+70. Risk heatmap visualizer.
+71. Stats dashboard (optional, CLI‑based).
+72. Plugin report formatter.
+73. Save/load projects (archive scans).
+
+🛡️ Security and Internal Protections:
+74. Proxy/TOR manager.
+75. Rate limit controller.
+76. Error handler with retries.
+77. Sandbox executor (for risky payloads).
+78. Integrity check (detect code tampering).
+79. Obfuscation layer (protect code).
+80. Digital signature for modules.
+81. Secure API key store.
+82. Internal user permissions.
+83. Anti‑detection layer (User‑Agent randomization).
+84. Auto self‑destruct (if suspicious environment).
+85. Cache manager (smart reuse of data).
+
+🔧 Maintenance and Operations:
+86. Settings manager (YAML/JSON).
+87. Project manager (handle multiple projects).
+88. Performance profiler.
+89. Logging system (JSON logs, colored logs).
+90. Backup/restore system.
+91. Unit test suite for modules.
+92. Auto‑updater for modules.
+93. Version manager.
+94. Notifications (Slack/Discord/email).
+95. Webhook dispatcher (Jira/GitHub integration).
+96. Plugin loader (dynamic).
+97. Extension API (for future plugins).
+98. Sandbox for untrusted plugins.
+
+🌍 Special Advanced Modules:
+99. Mobile reverse engineering (DEX, SO, SDK detection).
+100. Cloud secret hunter (search for exposed credentials).
+101. Dependency vulnerability scanner (npm/pip/audit).
+102. Container analyzer (Docker/K8s).
+103. Infrastructure scanner (integrated nmap).
+104. Hardware fingerprint detector (server fingerprinting).
+105. Auto‑PoC executor (safe proof of concept).
+106. Mitigation suggestion generator.
+107. Historical diff analyzer (compare scans over time).
+108. Collaboration mode (share findings with team).
+109. Multi‑language interface (English/Hebrew ready).
+110. Remote agent system (scan from multiple nodes).
+111. Live monitor (real‑time scan status).
+112. Web UI companion (optional).
+113. Data leak scanner (Pastebin, Google dorks, GitHub).
+114. Social media leak finder (Twitter/Reddit).
+115. Honeypot detector (avoid traps).
+116. Auto skip known vulnerabilities (deduplicate).
+117. Custom payload library editor (for advanced users).
+118. Chain exploit builder (combine multiple vulns).
+119. Credential stuffing detector (safe mode).
+120. Metadata scraper (PDF/Images hidden info).
+
+---
+
+📌 **Your tasks:**
+- Build a complete project with a folder/file structure that makes sense for these modules.
+- Implement every system listed above to actually work, not just placeholders.
+- Use the best languages for each part (Go, Rust, Python, etc.) and integrate them into one CLI tool that runs on Kali Linux.
+- Ask me if you have new ideas before adding them.
+- Make sure the code is clean, documented, and maintainable.
+
+When you’re done, I should be able to:
+- Clone or download the project,
+- Install dependencies,
+- Run a single CLI command,
+- And start scanning targets with all these capabilities.
+
+Thank you! Let me know if you have questions or extra ideas before implementing.

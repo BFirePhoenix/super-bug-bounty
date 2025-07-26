@@ -1,0 +1,24 @@
+modules = ["go"]
+
+[nix]
+channel = "stable-25_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Bug Bounty CLI Tool"
+
+[[workflows.workflow]]
+name = "Bug Bounty CLI Tool"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd /home/runner/work && go mod tidy && go build -o bugbounty main.go && ./bugbounty --help"

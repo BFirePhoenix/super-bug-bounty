@@ -1,0 +1,54 @@
+Before you start implementation, I want to include the following additional enhancements within the current web security scope:
+
+✅ Authentication Bruteforce Tester
+• Controlled testing using safe test accounts
+• Analyze rate-limiting behavior on login endpoints
+• Report any lack of brute-force protection
+
+✅ Headers Security Suggestions
+• Go beyond detection and provide actionable configuration advice (CSP, HSTS, SameSite, etc.) in the report
+
+✅ Automated Retest
+• A feature to rerun tests specifically on previously found vulnerabilities to verify if they have been fixed
+
+✅ Cross-scan Comparison
+• Ability to compare two scan results and highlight what is new, what has been fixed, and what remains
+
+✅ Scheduler Engine
+• Allow scans to be scheduled (e.g. run every week at a specific time)
+
+✅ Enhanced Caching
+• Support for Redis or SQLite-based caching for persistence and performance improvements across scans
+
+✅ Fallback Redundancy
+• If a server or proxy fails, automatically retry via another proxy or port
+
+✅ Rate-Limit Detection on All Endpoints
+• Check not only login but also critical API endpoints for rate-limiting issues
+• Identify endpoints vulnerable to brute-force or scraping
+
+✅ Hidden Route and Legacy Endpoint Discovery
+• Analyze JS and Wayback data to find hidden routes or older API versions still accessible
+
+✅ Content Security Analyzer
+• Scan for sensitive data leakage in headers, bodies, or metadata (API keys, tokens, debug info)
+
+✅ Chained Vulnerability Simulation
+• Attempt to chain multiple found vulnerabilities to see if combined exploitation leads to higher impact
+
+✅ Business-Context Prioritization
+• Allow defining priority for targets (e.g., main domain vs. staging) to rank risks accordingly
+
+✅ Adaptive Scanning
+• Dynamically adjust scan depth and request rate based on server responses and potential detection
+
+✅ Built-in PoC Generators per Vulnerability
+• For each confirmed vulnerability, provide ready-to-use PoC code (e.g., XSS HTML snippet, SQLi payload)
+
+✅ Intelligent Wordlist Expansion
+• Automatically enrich wordlists during brute-force enumeration based on patterns found during scans
+
+✅ Threat Intelligence Integration
+• Correlate findings with live threat feeds to highlight known compromised assets or suspicious infrastructure
+
+Please confirm you can add all of these enhancements before starting implementation.
